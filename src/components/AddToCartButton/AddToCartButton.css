@@ -1,0 +1,19 @@
+.add_ToCart{
+  
+    border-radius: 10%;
+    background: #fa0;
+    outline: none;
+    padding: 5px;
+    cursor: pointer;
+    margin: 2%;
+    font-size: 0.8rem;
+    box-shadow:  2px 2px 3px #000;
+  }
+  
+  .add_ToCart:hover{
+    background: #fa5;
+  }
+
+  .add_ToCart:active{
+    box-shadow: 2px 2px 3px #ff0;
+  }
