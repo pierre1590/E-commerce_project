@@ -1,9 +1,14 @@
 import "./Product.css";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import AddToCartButton from "../AddToCartButton/AddToCartButton";
 import Counter from "../Counter/Counter";
 
 export default function Product({ data }) {
+  const [quantity,setQuantity] = useState(1);
+ 
+
+  
   return (
   <>
     <div className="product">
@@ -12,7 +17,7 @@ export default function Product({ data }) {
       <div>
             <Counter data={data} />
       </div>
-      <AddToCartButton  data={data}/>
+      <AddToCartButton  data={data} quantity={quantity} setQuantity={setQuantity}/>
       <Link to={`/product/${data.id}`}>
         <button className="btn_info">More info...</button>
       </Link>

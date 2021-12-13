@@ -32,20 +32,7 @@ export default function Product() {
     })();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // Function to add product to cart with api call
-  const addToCart = async (product) => {
-    try {
-      const res = await api.addToCart(product);
-
-      console.log("add to cart", res);
-    } catch (err) {
-      if (err.response) {
-        console.warn("response error", err.response);
-      } else {
-        console.error("An error occurred");
-      }
-    }
-  };
+  
 
   return (
     <>

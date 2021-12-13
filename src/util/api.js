@@ -12,10 +12,12 @@ const api = {
   addToCart: (id, data) => {
     return axiosInstance.post(`addToCart/${id}`, data)
   },
-  checkout: (data) => {
-    return axiosInstance.get('checkout', data)
+  getCart: () => {
+    return axiosInstance.get('cart')
   },
-  
+  checkout: () => {
+    return axiosInstance.get('checkout')
+  },
 }
 
 window.api = api

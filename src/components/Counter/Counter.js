@@ -39,7 +39,7 @@ const Counter = ({data}) => {
         -
       </button>
        <input
-       style={{width: '50px',textAlign: 'center'}}
+       style={{width: '60px',textAlign: 'center'}}
         value={count}
         type="text"
         className="input_counter"
