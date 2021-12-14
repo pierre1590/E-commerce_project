@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const axiosInstance = axios.create({ baseURL: 'http://localhost:81/' })
+const axiosInstance = axios.create({ baseURL: 'http://localhost:81/' }) // Change the port from 81 to 8080
 
 const api = {
   getProducts: () => {
